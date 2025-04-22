@@ -3,7 +3,7 @@
 }
 
 .card__image {
-  border-radius: 10px;
+  border-radius: 8px;
   height: 413px;
   width: 413px;
   object-fit: cover;
@@ -34,10 +34,11 @@
   background-color: transparent;
   border: none;
   opacity: 40%;
+  padding: 0;
 }
 
 .card__like-button:hover {
-  opacity: 160%;
+  opacity: 100%;
   cursor: pointer;
 }
 

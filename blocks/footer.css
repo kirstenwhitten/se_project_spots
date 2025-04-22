@@ -6,4 +6,9 @@
   color: #212121;
   opacity: 70%;
   font-size: 16px;
+  line-height: 100%;
+}
+
+.footer__content {
+  margin: 0;
 }

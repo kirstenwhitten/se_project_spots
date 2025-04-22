@@ -6,19 +6,23 @@
 }
 
 .profile__avatar {
-  border-radius: 10px;
+  border-radius: 8px;
   object-fit: cover;
 }
 
 .profile__column {
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile__name {
-  margin: 0;
-  padding-bottom: 12px;
+  max-width: 420px;
+  margin: 0 0 12px 0;
   font-size: 32px;
   font-weight: 500;
+  line-height: 100%;
+  color: #212121;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -27,10 +31,11 @@
 }
 
 .profile__description {
+  max-width: 420px;
   margin: 0;
-  padding-bottom: 130px;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
+  line-height: 100%;
   color: #212121;
   opacity: 70%;
   display: -webkit-box;
@@ -41,6 +46,7 @@
 }
 
 .profile__edit-button {
+  margin-top: auto;
   background-color: transparent;
   border: none;
   color: #212121;
@@ -48,10 +54,20 @@
   padding: 0;
   display: flex;
   gap: 8px;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.profile__edit-button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/edit_icon.svg);
 }
 
 .profile__edit-button:hover {
-  opacity: 130%;
+  opacity: 100%;
   cursor: pointer;
 }
 
@@ -66,6 +82,17 @@
   gap: 8px;
   padding: 20px 32px;
   align-items: center;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 500;
+  border: 0;
+}
+
+.profile__add-button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/plus_icon.svg);
 }
 
 .profile__add-button:hover {
@@ -75,7 +102,6 @@
 
 @media screen and (max-width: 630px) {
   .profile {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
@@ -88,8 +114,6 @@
   }
 
   .profile__column {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 0;
   }
@@ -98,7 +122,6 @@
     padding-top: 6px;
     padding-bottom: 6px;
     font-size: 20px;
-    font-weight: 500;
   }
 
   .profile__description {
@@ -111,7 +134,6 @@
 
   .profile__add-button {
     margin: 0;
-    display: flex;
     justify-content: center;
     width: 100%;
   }
