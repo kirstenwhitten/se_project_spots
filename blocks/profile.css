@@ -119,17 +119,12 @@
   }
 
   .profile__name {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    margin: 12px 0 6px 0;
     font-size: 20px;
   }
 
-  .profile__description {
-    padding-bottom: 32px;
-  }
-
   .profile__edit-button {
-    padding-bottom: 20px;
+    margin: 32px 0 20px 0;
   }
 
   .profile__add-button {
