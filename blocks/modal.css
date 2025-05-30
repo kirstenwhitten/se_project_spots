@@ -116,9 +116,15 @@
     padding: 12px;
   }
 
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
+  }
+
   .modal__title {
     font-size: 20px;
     margin: 0 0 24px 0;
+    padding: 10px 0px;
   }
 
   .modal__form {
