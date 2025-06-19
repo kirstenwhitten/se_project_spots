@@ -33,3 +33,6 @@ With the use of flexbox, grid, and media queries, the desktop version is able to
 **Video**
 
 (https://drive.google.com/file/d/1U_U-pUprTYa1KfmOomqV41RH_Ly2yU_f/view?usp=sharing)
+
+<!-- add javascript features for modals-opening, closing, submiting-->
+<!-- add arrays and loops>
